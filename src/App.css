@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.main-component{
+  display:flex;
+}
+.course-component{
+  width:60%;
+  border: 1px solid red;
+  margin-left: 50px;
+  padding: 10px;
+}
