@@ -1,4 +1,16 @@
-.course-info{
-    border:1px solid red;
+.course-component-single-course-info{
+    margin: 20px;
+}
+.course-component-courses-info{
+    display:flex;
+    border-bottom:1px solid gray;
     margin:5px;
+    padding:10px;
+}
+.image-component img{
+    height: 200px;
+    width: 300px;
+}
+.course-component-text-decoration{
+    color:royalblue;
 }

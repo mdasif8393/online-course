@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cart.css'
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 const Cart = (props) => {
     const cart = props.cart;
     console.log(cart);
@@ -11,19 +12,21 @@ const Cart = (props) => {
     }
     return (
 
-        <div>
+        <div className="cart-component-container d-flex justify-content-center">
             <div>
+                <h4 className="cart-component-text-decoration">Order Summary</h4>
             {
                 cart.map(course=>
-                <div>
-                    <p>{course.name}</p>
-                    <p> {course.price} </p>
+                <div className="cart-component-single-cart-item ">
+                    <h6>Course: <span className="cart-component-text-decoration"> {course.name}</span></h6>
+                    <h6>Price:<span className="cart-component-text-decoration"> ${course.price}</span> </h6>
                 </div>
                 )
             }
             </div>
             <div>
-            <h4>Total price: {total}</h4>
+            <h4>Total price:<span style={{color: 'red'}}> ${(total).toFixed(2)}</span></h4>
+            <button className='btn btn-danger'>Confim Order</button>
             </div>
             
         </div>

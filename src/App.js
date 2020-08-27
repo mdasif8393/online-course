@@ -15,15 +15,16 @@ function App() {
     setCart(newItem);
   }
   return (
-    <div>
-      <div className="main-component">
-        <div className='course-component'>
+    <div className='app-container container d-flex justify-content-center'>
+      <div className="app-main-component">
+        <div className='app-course-component'>
           {
             coursesInfo.map(course => <Course course={course} handleAddClick={handleAddClick}></Course>)
           }
         </div>
-        <div className='cart-component'>
+        <div>
           <Cart cart = {cart}></Cart>
+
         </div>
       </div>
     </div>
