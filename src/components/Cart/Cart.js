@@ -25,7 +25,8 @@ const Cart = (props) => {
             }
             </div>
             <div>
-            <h4>Total price:<span style={{color: 'red'}}> ${(total).toFixed(2)}</span></h4>
+            <h5> Total purchase Courses: <span style={{color: 'red'}}>{cart.length}</span></h5>
+            <h5>Total price:<span style={{color: 'red'}}> ${(total).toFixed(2)}</span></h5>
             <button className='btn btn-danger'>Confim Order</button>
             </div>
             

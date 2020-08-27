@@ -18,7 +18,7 @@ const Course = (props) => {
                 <h4>Course Name: <span className='course-component-text-decoration'>{name}</span></h4>
                 <h4>Price: <span className='course-component-text-decoration'>${price}</span></h4>
                 <p>Instructor: <span className='course-component-text-decoration'> {instructor}</span></p>
-                <button  className="btn btn-primary" onClick={()=>handleAddClick(course)}> <FontAwesomeIcon icon={faShoppingCart} /> add to cart</button>
+                <button  className="btn btn-primary" onClick={()=>handleAddClick(course)}> <FontAwesomeIcon icon={faShoppingCart} /> Enroll Now</button>
         </div>
         </div>
         
